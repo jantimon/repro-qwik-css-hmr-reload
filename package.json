@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode ssr"
+  },
+  "devDependencies": {
+    "@qwik.dev/core": "2.0.0-rc.3",
+    "@qwik.dev/router": "2.0.0-rc.3",
+    "typescript": "5.9.3",
+    "vite": "8.3.5"
+  }
+}
