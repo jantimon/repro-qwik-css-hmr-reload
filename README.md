@@ -1,5 +1,8 @@
 # Qwik: a css edit reloads the page when a plain function imports the css
 
+- Issue: https://github.com/QwikDev/qwik/issues/9261
+- Fix: https://github.com/QwikDev/qwik/pull/9269
+
 ![The cursor clicks the count button three times, then box.css changes from hotpink to lightblue. Vite swaps the stylesheet, then Qwik reloads the page and the counter drops from 3 to 0](hmr.gif)
 
 `src/box.tsx` imports `box.css` and exports `Box`, a plain function that the route renders. When `box.css` changes, Vite swaps the stylesheet and the box turns lightblue. Half a second later Qwik reloads the page, and the counter, which was at 3, is back at 0.
